@@ -1,0 +1,126 @@
+.purchased {
+  border: 2px solid green;
+}
+
+.not-purchased {
+  border: 2px solid rgb(247, 6, 6);
+}
+
+
+
+    .navbar-custom {
+      background-color: #27485D;
+      padding: 20px 10px; /* Ajuster la taille du menu */
+    }
+    .navbar-custom .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .navbar-custom .navbar-nav .nav-link:hover {
+      color: #ddd;
+    }
+    .btn-color {
+      color: #fff;
+    }
+    .form-label {
+      color: #fff;; /* Couleur du texte des labels */
+      /* border: 2px solid #27485D; Bordure solide de 2px avec la couleur spécifiée       autre*/
+      border-radius: 4px; /* Bordure arrondie de 4px */
+      padding: 5px; /* Espacement interne pour plus de lisibilité */
+      margin-bottom: 5px; /* Espacement sous le label */
+      display: block; /* Pour s'assurer que le label prenne toute la largeur */
+      text-align: left; /* Aligner le texte à gauche */
+    }
+    .form-container {
+      text-align: left; /* Aligner tout le contenu des formulaires à gauche */
+    }
+  
+
+
+
+
+/* Existant */
+:root {
+  --bg-color: #3E708E;
+  --btn-color: #27485D;
+  --text-color: #FFFFFF;
+}
+
+body.bg-color {
+  background-color: var(--bg-color);
+}
+
+.text-white {
+  color: var(--text-color);
+}
+
+.btn-color {
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  border-color: var(--btn-color);
+}
+
+.btn-color:hover {
+  background-color: darken(var(--btn-color), 10%);
+  border-color: darken(var(--btn-color), 10%);
+}
+
+.card {
+  
+  text-align: left;
+  transition: border 0.3s ease;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+
+  gap: 20px; /* Espace entre les cartes */
+  justify-content: space-between;
+  gap: 20px; /* Espace entre les cartes */
+  justify-content: space-between;
+}
+
+.card .btn {
+  margin-right: 10px;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+}
+
+.card .btn:hover {
+  background-color: darken(var(--btn-color), 10%);
+}
+
+.card-title, .card-text {
+  color: var(--text-color);
+}
+
+/* Style pour le bouton de menu hamburger */
+.navbar-toggler {
+  border: none; /* Supprime la bordure du bouton */
+  background: transparent; /* Rend le fond transparent pour le bouton */
+}
+
+/* Style pour les icônes du menu hamburger */
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath fill="%23fff" d="M4 6h16v2H4zm0 4h16v2H4zm0 4h16v2H4z" /%3E%3C/svg%3E');
+}
+
+/* Assurez-vous que le menu hamburger est blanc sur les petits écrans */
+@media (max-width: 991px) {
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath fill="%23fff" d="M4 6h16v2H4zm0 4h16v2H4zm0 4h16v2H4z" /%3E%3C/svg%3E');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

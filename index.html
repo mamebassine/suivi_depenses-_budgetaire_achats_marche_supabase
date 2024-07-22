@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suivi de Dépenses - senMarché</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body class="bg-color">
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand btn-color" href="#">senMarché</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#content">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <button id="logout-btn" class="btn btn-danger btn-color">Déconnexion</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="app" class="container text-center d-flex flex-column justify-content-center align-items-center vh-100">
+    <!-- Page d'accueil -->
+    <div id="home" class="d-flex flex-column justify-content-center align-items-center w-100">
+      <h1 class="text-white mb-5">Bienvenue sur senMarché</h1>
+      <div id="auth-buttons" class="d-flex justify-content-center">
+        <button id="signup" class="btn btn-primary btn-color mx-2">S'inscrire</button>
+        <button id="login" class="btn btn-secondary btn-color mx-2">Connexion</button>
+      </div>
+    </div>
+
+    <!-- Authentification -->
+    <div id="auth" class="form-container" style="display: none;">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" id="email" placeholder="Email" class="form-control mb-2">
+      <label for="password" class="form-label">Mot de passe</label>
+      <input type="password" id="password" placeholder="Mot de passe" class="form-control mb-2">
+      <button id="signup-btn" class="btn btn-success btn-color">S'inscrire</button>
+      <button id="login-btn" class="btn btn-primary btn-color">Se connecter</button>
+      <button id="logout-btn" class="btn btn-danger btn-color" style="display: none;">Se déconnecter</button>
+    </div>
+
+    <!-- Gestion des produits -->
+    <div id="content" class="form-container" style="display: none;">
+      <label for="date" class="form-label">Date</label>
+      <input type="date" id="date" class="form-control mb-2">
+      <label for="product-name" class="form-label">Nom du produit</label>
+      <input type="text" id="product-name" placeholder="Nom du produit" class="form-control mb-2">
+      <label for="price" class="form-label">Prix</label>
+      <input type="number" id="price" placeholder="Prix" class="form-control mb-2">
+      <label for="quantity" class="form-label">Quantité</label>
+      <input type="number" id="quantity" placeholder="Quantité" class="form-control mb-2">
+      <button id="add-product" class="btn btn-primary btn-color #27485D;">Ajouter le produit</button>
+      <!-- Ajouter un champ de sélection pour filtrer par date -->
+      <button id="filter-products" class="btn btn-secondary btn-color">Filtrer par date</button> 
+      <input type="date" id="filter-date" class="form-control mb-2"> 
+
+      <div id="product-list" class="row mt-4"></div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
+  <script src="script.js" async defer></script>
+</body>
+</html>
