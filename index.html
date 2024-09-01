@@ -21,7 +21,7 @@
           <a class="nav-link" href="#content">Accueil</a>
         </li>
         <li class="nav-item">
-          <button id="logout-btn" class="btn btn-danger btn-color">Déconnexion</button>
+          <!-- <button id="logout-btn" class="btn btn-danger btn-color">Déconnexion</button> -->
         </li>
       </ul>
     </div>
@@ -37,16 +37,17 @@
       </div>
     </div>
 
-    <!-- Authentification -->
-    <div id="auth" class="form-container" style="display: none;">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" id="email" placeholder="Email" class="form-control mb-2">
-      <label for="password" class="form-label">Mot de passe</label>
-      <input type="password" id="password" placeholder="Mot de passe" class="form-control mb-2">
-      <button id="signup-btn" class="btn btn-success btn-color">S'inscrire</button>
-      <button id="login-btn" class="btn btn-primary btn-color">Se connecter</button>
-      <button id="logout-btn" class="btn btn-danger btn-color" style="display: none;">Se déconnecter</button>
-    </div>
+   <!-- Authentification -->
+<div id="auth" class="form-container" style="display: none;">
+  <!-- Assure-toi qu'il n'y a pas de bouton de déconnexion en double ici -->
+  <label for="email" class="form-label">Email</label>
+  <input type="email" id="email" placeholder="Email" class="form-control mb-2">
+  <label for="password" class="form-label">Mot de passe</label>
+  <input type="password" id="password" placeholder="Mot de passe" class="form-control mb-2">
+  <button id="signup-btn" class="btn btn-success btn-color">S'inscrire</button>
+  <button id="login-btn" class="btn btn-primary btn-color">Se connecter</button>
+</div>
+
 
     <!-- Gestion des produits -->
     <div id="content" class="form-container" style="display: none;">
